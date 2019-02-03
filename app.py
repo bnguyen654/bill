@@ -21,8 +21,7 @@ def create_game(data):
     GAMES[room] = gm
     join_room(room)
     emit('join_room', {'room'})
-
-
+    
 
 if __name__ == "__main__":
     socketio.run(host='0.0.0.0')
